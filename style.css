@@ -9,13 +9,25 @@ body {
     flex-direction: row;
 }
 
-
-    
-    
-    
-
 p {
     font-size: 1.1em;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: gray;
+}
+
+a:visited .fab, .fas {
+    color: black;
 }
 
 .themeColor {
