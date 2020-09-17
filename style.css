@@ -3,33 +3,56 @@ body {
     padding: 0;
     display: flex;
     font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+.themeColor {
+    background-color: #e9c4a7;
 }
 
 #leftPanel {
-    background-color: rgb(72, 209, 204);
+    width: 15%;   
+    
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 5px 0 0 5px;
-    border-radius: 10px;
-} 
+    
+}
+
+#leftPanel #picture img {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 5px;
+    
+}
 
 main {
+    width: 60%;
     background-color: mintcream;
     margin: 5px 5px 0 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #leftPanel, main {
     padding: 5px;
 }
 
+h1 {
+    font-size: 4em;
+}
+
 h3 {
-    background-color: rgb(20, 148, 144);
-    color: whitesmoke;
+    
+    
     padding: 5px 5px 5px 7px;
     border-radius: 10px;
+    font-family: Fredoka One, Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
 }
 
 article {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
     padding: 5px;
     margin: 10px;
 }
