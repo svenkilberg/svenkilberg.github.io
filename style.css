@@ -9,7 +9,7 @@ body {
     flex-direction: row;
 }
 
-p {
+p, li {
     font-size: 1.1em;
 }
 
@@ -67,7 +67,7 @@ a:visited .fab, .fas {
 main {
     
     width: 1150px;
-    background-color: mintcream;
+    background-color: white;
     margin: 5px 5px 0 0;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
