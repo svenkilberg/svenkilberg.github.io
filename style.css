@@ -1,3 +1,8 @@
+/* CSS-variable for the common color used in the page */
+:root {
+   --theme-color: #d6dbec;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -30,14 +35,12 @@ a:visited .fab, .fas {
     color: black;
 }
 
-.themeColor {
-    background-color: #e9c4a7;
+.themeColor {    
+    background-color: var(--theme-color, white); /* White is the fallback color if the variable does not work */
 }
 
-#leftPanel {
-    
-    width: 300px;   
-    
+#leftPanel {    
+    width: 300px;  
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     margin: 5px 0 0 5px;
     
@@ -84,13 +87,13 @@ h3 {
     border-radius: 10px;
     font-family: Fredoka One, Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    border-bottom: 7px solid  #e9c4a7;
+    /*#b4bddb*/
+    border-bottom: 7px solid var(--theme-color, white); /* White is the fallback color if the variable does not work */
 }
 
 
 
-article {
-    
+article {    
     padding: 5px;
     margin: 10px;
 }
