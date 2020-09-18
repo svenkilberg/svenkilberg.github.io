@@ -18,6 +18,7 @@ p, li {
     font-size: 1.1em;
 }
 
+/* Styling for text links and the font awesome icons */
 a {
     text-decoration: none;
     color: black;
@@ -28,12 +29,13 @@ a:visited {
 }
 
 a:hover {
-    color: gray;
+    color: gray; /* Show that this is links when hovered */
 }
 
-a:visited .fab, .fas {
-    color: black;
+a:visited .fab, .fas { 
+    color: black; /* Keeps the icons black after linkeds have been visited */
 }
+/* End of styling for links */
 
 .themeColor {    
     background-color: var(--theme-color, white); /* White is the fallback color if the variable does not work */
@@ -51,7 +53,7 @@ a:visited .fab, .fas {
     height: 286px;
     
     display: block;
-    margin: 0 auto;
+    margin: auto;
     padding-top: 5px;
     
 }
@@ -64,12 +66,11 @@ a:visited .fab, .fas {
     margin-left: 40px;
 }
 
-#contact h2 {
-    display: none;    
+#picture h2 {
+    display: none; /* This header is not shown on larger screens */ 
 }
 
-main {
-    
+main {    
     width: 1150px;
     background-color: white;
     margin: 5px 5px 0 0;
@@ -87,25 +88,25 @@ h1 {
 h3 { 
     border-radius: 10px;
     font-family: Fredoka One, Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    /*#b4bddb*/
+    text-transform: uppercase;    
     border-bottom: 7px solid var(--theme-color, white); /* White is the fallback color if the variable does not work */
 }
-
-
 
 article {    
     padding: 5px;
     margin: 10px;
 }
 
+/* Removes the big H1 with name and shows a smaller name under picture on small screens */
 @media only screen and (max-width: 450px) {
     h1 {
         display:none;
     }
 
-    #contact h2 {
-        display: inline;
+    #picture h2 {
+        display: block;
         text-align: center;
+        padding-top: 5px;
+        margin: auto;
     }
 }
