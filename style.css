@@ -97,6 +97,33 @@ article {
     margin: 10px;
 }
 
+#gitHubReposContainer {
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+}
+
+.repo {
+    height: 150px;
+    width:  150px;
+    
+    margin: 5px;
+    padding: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+
+}
+
+.repo p {
+    font-size: 0.8em;
+    
+    
+}
+
+
+
+
+
 /* Removes the big H1 with name and shows a smaller name under picture on small screens */
 @media only screen and (max-width: 450px) {
     h1 {
