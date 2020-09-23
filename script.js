@@ -12,12 +12,24 @@ fetch('https://api.github.com/users/svenkilberg/repos')
 function drawRepos(repoList) {
     
     for (let i = 0; i < repoList.length; i++) {
+        
+    let description = "";
+    
+    // Prevents null from being printed on the page
+    if (repoList[i].description === null) {
+        description = "";
+    }  
+    else {
+        description = repoList[i].description;
+    }
+
     let gitHubReposHtml = `
     <a href="${repoList[i].html_url}" target="_blank"><div class="repo">
+    <p><span class="fab fa-github fa-2x" ></span></p>
     <h6>${repoList[i].name}</h6>
-    <p>${repoList[i].description}</p>
+    <p>${description}</p>
     </div>
-    </a>`.trim();
+    </a>`.trim(); // Trim removes white spaces from beginning and end
 
     document.getElementById('gitHubReposContainer').insertAdjacentHTML('beforeend', gitHubReposHtml);
 
