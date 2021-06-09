@@ -1,142 +1,143 @@
 /* CSS-variable for the common color used in the page */
 :root {
-   --theme-color: #d6dbec;
+	/*--theme-color: #d6dbec;*/
+	--theme-color: #dcefea;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-flow: wrap;
-    font-family: Arial, Helvetica, sans-serif;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-flow: wrap;
+	font-family: Arial, Helvetica, sans-serif;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
 }
 
-p, li {
-    font-size: 1.1em;
+p,
+li {
+	font-size: 1.1em;
 }
 
 /* Styling for text links and the font awesome icons */
 a {
-    text-decoration: none;
-    color: black;
+	text-decoration: none;
+	color: black;
 }
 
 a:visited {
-    color: black;
+	color: black;
 }
 
 a:hover {
-    color: darkgrey; /* Show that this is links when hovered */
+	color: darkgrey; /* Show that this is links when hovered */
 }
 
-a:visited .fab, .fas { 
-    color: black; /* Keeps the icons black after linkeds have been visited */
+a:visited .fab,
+.fas {
+	color: black; /* Keeps the icons black after linkeds have been visited */
 }
 /* End of styling for links */
 
-.themeColor {    
-    background-color: var(--theme-color, white); /* White is the fallback color if the variable does not work */
+.themeColor {
+	background-color: var(--theme-color, white); /* White is the fallback color if the variable does not work */
 }
 
-#leftPanel {    
-    width: 300px;  
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 5px 0 0 5px;
-    
+#leftPanel {
+	width: 300px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin: 5px 0 0 5px;
 }
 
 #leftPanel #picture img {
-    width: 140px;
-    height: 190px;
-    
-    display: block;
-    margin: auto;
-    padding-top: 5px;
-    
+	width: 140px;
+	height: 190px;
+
+	display: block;
+	margin: auto;
+	padding-top: 5px;
 }
 
 #leftPanel #contact span {
-    margin-right: 4px;
+	margin-right: 4px;
 }
 
-#contact, #personality {
-    margin-left: 40px;
+#contact,
+#personality {
+	margin-left: 40px;
 }
 
 #picture h2 {
-    display: none; /* This header is not shown on larger screens */ 
+	display: none; /* This header is not shown on larger screens */
 }
 
-main {    
-    width: 1150px;
-    background-color: white;
-    margin: 5px 5px 0 0;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+main {
+	width: 1150px;
+	background-color: white;
+	margin: 5px 5px 0 0;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-#leftPanel, main {
-    padding: 5px;
+#leftPanel,
+main {
+	padding: 5px;
 }
 
 h1 {
-    font-size: 4em;
+	font-size: 4em;
 }
 
-h3 { 
-    border-radius: 10px;
-    font-family: Fredoka One, Arial, Helvetica, sans-serif;
-    text-transform: uppercase;    
-    border-bottom: 7px solid var(--theme-color, white); /* White is the fallback color if the variable does not work */
+h3 {
+	border-radius: 10px;
+	font-family: Fredoka One, Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	border-bottom: 7px solid var(--theme-color, white); /* White is the fallback color if the variable does not work */
 }
 
-article {    
-    padding: 5px;
-    margin: 10px;
+article {
+	padding: 5px;
+	margin: 10px;
 }
 
 #gitHubReposContainer {
-    display: flex;
-    flex-direction: row;
-    flex-flow: wrap;
+	display: flex;
+	flex-direction: row;
+	flex-flow: wrap;
 }
 
 .repo {
-    height: 150px;
-    width:  150px;    
-    margin: 5px;
-    padding: 5px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    text-align: center;
-
+	height: 150px;
+	width: 150px;
+	margin: 5px;
+	padding: 5px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
 }
 
 .repo p {
-    font-size: 0.7em;
-    
-    
+	font-size: 0.7em;
 }
 
 a:hover .repo {
-    background-color: var(--theme-color, rgb(207, 206, 206)); /* Show that this is links when hovered */
+	background-color: var(--theme-color, rgb(207, 206, 206)); /* Show that this is links when hovered */
 }
 
-a:hover .repo h6, p {
-    color: black; /* Keeps the links black for contrast */
+a:hover .repo h6,
+p {
+	color: black; /* Keeps the links black for contrast */
 }
 
 /* Removes the big H1 with name and shows a smaller name under picture on small screens */
 @media only screen and (max-width: 450px) {
-    h1 {
-        display:none;
-    }
+	h1 {
+		display: none;
+	}
 
-    #picture h2 {
-        display: block;
-        text-align: center;
-        padding-top: 5px;
-        margin: auto;
-    }
+	#picture h2 {
+		display: block;
+		text-align: center;
+		padding-top: 5px;
+		margin: auto;
+	}
 }
